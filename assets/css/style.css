@@ -1,3 +1,27 @@
+/* Explicação de Unidades de Medidas 
+
+PX e CM - > Unidade fixa, não se adapta a diferentes tamanhos de tela. É bastante usado para elementos que precisam de tamanho fixo, como bordas e imagens.	
+EM e REM -> Unidades relativas, se adaptam melhor a diferentes tamanhos de tela. É bastante usado para tipografia.
+VW e VH -> Unidade relativa baseada na largura (VW) e altura (VH) da viewport. É bastante usada para layouts responsivos.
+% -> Unidade relativa, geralmente usada para definir tamanhos em relação ao elemento pai. É bastante usada em layouts fluidos.
+
+@media screen and (max-width: 768px) {
+	media -> Consulta de mídia para aplicar estilos específicos com base nas características do dispositivo, como largura da tela.
+	screen -> Tipo de mídia, neste caso, telas de dispositivos.
+	and -> Operador lógico que combina múltiplas condições.
+	max-width: 768px -> Condição que define o limite máximo de largura da tela para aplicar os estilos dentro do bloco.
+}
+
+Breakpoints -> Pontos de interrupção onde o layout do site muda para se adaptar melhor ao tamanho da tela do dispositivo. Comumente usados em design responsivo.
+Exemplos comuns de breakpoints:
+- 320px a 480px: Dispositivos móveis pequenos (smartphones)
+- 481px a 768px: Dispositivos móveis grandes (tablets)
+- 769px a 1024px: Laptops pequenos e tablets em modo paisagem
+- 1025px a 1200px: Laptops grandes e desktops pequenos
+
+*/
+
+
 /* =====================================RESET======================================================= */
 html,
 body,
