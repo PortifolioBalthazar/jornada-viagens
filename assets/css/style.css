@@ -1,43 +1,176 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, b, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li, form, label,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* Explicação de Unidades de Medidas 
+
+PX e CM - > Unidade fixa, não se adapta a diferentes tamanhos de tela. É bastante usado para elementos que precisam de tamanho fixo, como bordas e imagens.	
+EM e REM -> Unidades relativas, se adaptam melhor a diferentes tamanhos de tela. É bastante usado para tipografia.
+VW e VH -> Unidade relativa baseada na largura (VW) e altura (VH) da viewport. É bastante usada para layouts responsivos.
+% -> Unidade relativa, geralmente usada para definir tamanhos em relação ao elemento pai. É bastante usada em layouts fluidos.
+
+@media screen and (max-width: 768px) {
+	media -> Consulta de mídia para aplicar estilos específicos com base nas características do dispositivo, como largura da tela.
+	screen -> Tipo de mídia, neste caso, telas de dispositivos.
+	and -> Operador lógico que combina múltiplas condições.
+	max-width: 768px -> Condição que define o limite máximo de largura da tela para aplicar os estilos dentro do bloco.
+}
+
+Breakpoints -> Pontos de interrupção onde o layout do site muda para se adaptar melhor ao tamanho da tela do dispositivo. Comumente usados em design responsivo.
+Exemplos comuns de breakpoints:
+- 320px a 480px: Dispositivos móveis pequenos (smartphones)
+- 481px a 768px: Dispositivos móveis grandes (tablets)
+- 769px a 1024px: Laptops pequenos e tablets em modo paisagem
+- 1025px a 1200px: Laptops grandes e desktops pequenos
+
+*/
+
+
+/* =====================================RESET======================================================= */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* ================================================================================================= */
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f5f5f5;
+  --background-tertiary-color: #000000;
+
+  --primary-color: #8f0101;
+  --secondary-color: #b81515;
+
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
+
+  --title-weight: 700;
+  --text-weight: 400;
+  --menu-text-weight: 500;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--title-weight);
+}
