@@ -1,0 +1,59 @@
+footer {
+  background-color: var(--background-tertiary-color);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+footer p {
+  color: var(--text-secondary-color);
+  font-size: 16px;
+  font-weight: var(--text-weight);
+  line-height: 28px;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.horario-de-atendimento {
+  margin-bottom: 8px;
+}
+
+.desenvolvidor-por {
+  margin-bottom: 32px;
+}
+
+.acesso-redes {
+  margin-bottom: 16px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 32px 60px;
+  }
+
+  footer p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+  }
+
+  .footer-informacoes-esquerda {
+    text-align: left;
+  }
+
+  .desenvolvidor-por {
+    margin-bottom: 0px;
+  }
+}

@@ -8,25 +8,129 @@
   </head>
   <body>
     <header>
-      <a href="index.html" title="Voltar paraPágina Inicial">
+      <a
+        href="index.html"
+        class="logo-jornada-viagens-mobile-and-tablet"
+        title="Voltar paraPágina Inicial"
+      >
         <img
           src="assets/img/bussola-jornada.png"
           alt="Bussola na cor branca. Logo da Jornada Viagens"
         />
       </a>
-      <a href="#">
+      <a
+        href="index.html"
+        class="logo-jornada-viagens-desktop"
+        title="Voltar paraPágina Inicial"
+      >
         <img
-          src="assets/img/menu.png"
-          alt="Icone de menu hamburguer com tres linhas horizontais"
+          src="assets/img/logo-jornada-texto.png"
+          alt="Logo Branca da Jornada Viagens"
         />
       </a>
-      <nav>
-        <ul>
-          <li><a href="blog.html" target="_blank" title="Acesse o Blog da Jornada Viagens">Blog</a></li>
-          <li><a href="pacotes.html" target="_blank" title="Acessar nossos Pacotes de Viagens">Pacotes de Viagens</a></li>
-          <li><a href="contato.html" target="_blank" title="Acessar o Contato conosco">Contato</a></li>
-        </ul>
-      </nav>
+      <div class="menu-navegacao">
+        <label for="menu-toggle" class="img-menu" title="Abrir Menu de Navegação">
+          <img
+            src="assets/img/menu.png"
+            alt="Icone de menu hamburguer com tres linhas horizontais"
+          />
+        </label>
+        <input type="checkbox" name="menu-toggle" id="menu-toggle" />
+        <nav class="nav-menus">
+          <ul class="lista-links-menu">
+            <li>
+              <a
+                href="blog.html"
+                title="Acesse o Blog da Jornada Viagens"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="pacotes.html"
+                title="Acessar nossos Pacotes de Viagens"
+                >Pacotes de Viagens</a
+              >
+            </li>
+            <li>
+              <a
+                href="contato.html"
+                title="Acessar o Contato conosco"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <main>
+      <section class="imagem-home">
+        <a href="#">
+          <img src="assets/img/Frame-home.png" alt="Imagem de um rio com água azul, coqueiros e um homem navegando em uma canoa." />
+        </a>
+      </section>
+      <section class="texto-sobre-agencia">
+        <p>
+          Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades, cuidamos de todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!
+        </p>
+      </section>
+      <section class="ofertas-da-semana">
+        <h1>Ofertas da Semana</h1>
+        <div class="linha-vermelha"></div>
+        <div class="pacotes-viagens">
+          <div class="card-pacote japao">
+            <p>HOTEL+AÉREO</p>
+            <h2>Japão</h2>
+            <h3>R$ 4000</h3>
+            <button>Ver detalhes</button>
+          </div>
+          <div class="card-pacote japao">
+            <p>HOTEL+AÉREO</p>
+            <h2>San Andreas</h2>
+            <h3>R$ 3000</h3>
+            <button>Ver detalhes</button>
+          </div>
+          <div class="card-pacote japao">
+            <p>HOTEL+AÉREO</p>
+            <h2>Paraíba</h2>
+            <h3>R$ 1200</h3>
+            <button>Ver detalhes</button>
+          </div>
+          <div class="card-pacote japao">
+            <p>HOTEL+AÉREO</p>
+            <h2>Manaus</h2>
+            <h3>R$ 1600</h3>
+            <button>Ver detalhes</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>Busque por Categoria</h1>
+        <div class="linha-vermelha"></div>
+      </section>
+      <footer>
+        <div class="footer-informacoes-esquerda">
+          <a href="index.html" class="logo-footer" title="Voltar paraPágina Inicial">
+            <img src="assets/img/logo-jornada-texto.png" alt="Logo Branca da Jornada Viagens"/>
+          </a>
+          <p class="horario-de-atendimento">Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
+          <p class="desenvolvidor-por">Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+        </div>
+        <div class="footer-informacoes-direita">
+          <p class="acesso-redes">Acesse nossas redes:</p>
+          <div class="footer-redes-sociais">
+            <a href="#">
+              <img src="assets/img/Whatsapp.png" alt="Ícone de Whatsapp para entrar em contato com a Jornada Viagens"/>
+            </a>
+            <a href="#">
+              <img src="assets/img/Instragam.png" alt="Ícone de Instagram para acessar o perfil da Jornada Viagens"/>
+            </a>
+            <a href="#">
+              <img src="assets/img/Twiter.png" alt="Ícone de Twitter para acessar o perfil da Jornada Viagens"/>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
