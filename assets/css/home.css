@@ -1,0 +1,124 @@
+/* Responsividade de imagens */
+.imagem-home .banner-home-img {
+  height: 400px;
+  width: 100%;
+  background: url("../img/banner-home-mobile.png") no-repeat;
+  background-size: cover;
+}
+
+.texto-sobre-agencia {
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding: 88px 24px;
+  margin: 0px;
+}
+
+.ofertas-da-semana {
+  text-align: center;
+  padding-bottom: 88px;
+}
+
+.ofertas-da-semana h1 {
+  font-weight: var(--title-weight);
+  font-size: 28px;
+}
+
+.ofertas-da-semana .linha-vermelha {
+  width: 180px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 16px auto 32px auto;
+}
+
+.pacotes-viagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.pacotes-viagens .card-pacote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 312px;
+  height: 288px;
+  padding: 24px 16px;
+}
+
+.pacotes-viagens .japao {
+  background-image: url("../img/japao.png");
+  border-radius: 16px;
+  background-size: cover;
+}
+
+.card-pacote p {
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--text-secondary-color);
+  margin-botom: 8px;
+}
+
+.card-pacote h2 {
+  font-weight: var(--title-weight);
+  font-size: 40px;
+  color: var(--text-secondary-color);
+  margin-bottom: 24px;
+}
+
+.card-pacote h3 {
+  font-weight: var(--title-weight);
+  font-size: 32px;
+  color: var(--text-secondary-color);
+  margin-bottom: 24px;
+}
+
+.card-pacote button {
+  width: 280px;
+  height: 64px;
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+  padding: 16px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .imagem-home .banner-home-img {
+    background: url("../img/banner-home-tablet.png") no-repeat;
+    height: 620px;
+    background-size: cover;
+  }
+
+  .texto-sobre-agencia {
+    font-size: 32px;
+    line-height: 1.5em;
+    padding: 88px 60px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .imagem-home .banner-home-img {
+    background: url("../img/banner-home-desktop.png") no-repeat center;
+    height: 620px;
+    background-size: cover;
+  }
+  .texto-sobre-agencia {
+    padding: 120px 104px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .texto-sobre-agencia {
+    padding: 120px 140px;
+  }
+}
