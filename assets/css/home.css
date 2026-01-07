@@ -1,5 +1,9 @@
-.imagem-home img{
+/* Responsividade de imagens */
+.imagem-home .banner-home-img {
+    height: 400px;
     width: 100%;
+    background: url("../img/banner-home-mobile.png") no-repeat;
+    background-size: cover;
 }
 
 .texto-sobre-agencia {
@@ -83,4 +87,22 @@
     font-weight: var(--title-weight);
     font-size: 20px;
     line-height: 32px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .imagem-home .banner-home-img {
+        background: url("../img/banner-home-tablet.png") no-repeat;
+        height: 620px;
+        background-size: cover;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .imagem-home .banner-home-img {
+        background: url("../img/banner-home-desktop.png") no-repeat center;
+        height: 620px;
+        background-size: cover;
+    }
 }

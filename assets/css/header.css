@@ -8,7 +8,7 @@ header {
   position: relative;
 }
 
-.logo-jornada-viagens-mobile-and-tablet {
+.logo-jornada-viagens-mobile-tablet {
   display: inline-block;
   width: 68px;
   height: 64px;
@@ -98,7 +98,7 @@ input[type="checkbox"]:checked ~ .nav-menus {
         padding: 37px 120px;
     }
 
-    .logo-jornada-viagens-mobile-and-tablet {
+    .logo-jornada-viagens-mobile-tablet {
       display: none;
     }
 
@@ -106,13 +106,24 @@ input[type="checkbox"]:checked ~ .nav-menus {
       display: inline-block;
     }
 
+    .logo-jornada-viagens-desktop img {
+      width: 260px;
+      height: 64px;
+    }
+
+    .lista-links-menu li {
+        white-space: nowrap;
+    }
+
     .lista-links-menu a:hover {
         text-decoration: underline;
         font-weight: var(--title-weight);
+        white-space: nowrap;
     }
 
     .lista-links-menu a:focus {
         color: var(--primary-color);
         font-weight: var(--title-weight);
+        white-space: nowrap;
     }
 }
