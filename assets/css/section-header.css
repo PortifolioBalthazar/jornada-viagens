@@ -1,0 +1,16 @@
+.section-header {
+  text-align: center;
+  padding-bottom: 88px;
+}
+
+.section-header h2 {
+  font-weight: var(--title-weight);
+  font-size: 28px;
+}
+
+.section-header .divider {
+  width: 180px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 16px auto 32px auto;
+}

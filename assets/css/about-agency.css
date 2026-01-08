@@ -1,0 +1,30 @@
+.about-agency {
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding: 88px 24px;
+  margin: 0px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .about-agency {
+    font-size: 32px;
+    line-height: 1.5em;
+    padding: 88px 60px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .about-agency {
+    padding: 120px 104px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-agency {
+    padding: 120px 140px;
+  }
+}

@@ -7,7 +7,7 @@
     <title>Jornada Viagens</title>
   </head>
   <body>
-    <header>
+    <header class="header-jornada">
       <a
         href="index.html"
         class="logo-jornada-viagens-mobile-tablet"
@@ -64,49 +64,71 @@
       </div>
     </header>
     <main>
-      <section class="imagem-home">
-        <div class="banner-home-img"></div>
+      <section class="hero">
+        <div class="hero-img"></div>
       </section>
-      <section class="texto-sobre-agencia">
+      <section class="about-agency">
         <h2>
           Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades, cuidamos de todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!
         </h2>
       </section>
       <section class="ofertas-da-semana">
-        <h1>Ofertas da Semana</h1>
-        <div class="linha-vermelha"></div>
-        <div class="pacotes-viagens">
-          <div class="card-pacote japao">
-            <p>HOTEL+AÉREO</p>
-            <h2>Japão</h2>
-            <h3>R$ 4000</h3>
-            <button>Ver detalhes</button>
-          </div>
-          <div class="card-pacote japao">
-            <p>HOTEL+AÉREO</p>
-            <h2>San Andreas</h2>
-            <h3>R$ 3000</h3>
-            <button>Ver detalhes</button>
-          </div>
-          <div class="card-pacote japao">
-            <p>HOTEL+AÉREO</p>
-            <h2>Paraíba</h2>
-            <h3>R$ 1200</h3>
-            <button>Ver detalhes</button>
-          </div>
-          <div class="card-pacote japao">
-            <p>HOTEL+AÉREO</p>
-            <h2>Manaus</h2>
-            <h3>R$ 1600</h3>
-            <button>Ver detalhes</button>
-          </div>
+        <div class="section-header">
+          <h2>Ofertas da Semana</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="packages-grid">
+          <article class="package-card package-card--japan">
+            <header class="package-card__header">
+              <p class="package-card__type">Hotel + Aéreo</p>
+              <h2 class="package-card__destination">Japão</h2>
+              <p class="package-card__price">R$ 4.000</p>
+            </header>
+
+            <footer class="package-card__footer">
+              <a href="#" class="package-card__link">Ver detalhes</a>
+            </footer>
+          </article>
+          <article class="package-card package-card--san-andreas">
+            <header class="package-card__header">
+              <p class="package-card__type">Hotel + Aéreo</p>
+              <h2 class="package-card__destination">San Andreas</h2>
+              <p class="package-card__price">R$ 3.000</p>
+            </header>
+
+            <footer class="package-card__footer">
+              <a href="#" class="package-card__link">Ver detalhes</a>
+            </footer>
+          </article>
+          <article class="package-card package-card--paraiba">
+            <header class="package-card__header">
+              <p class="package-card__type">Hotel + Aéreo</p>
+              <h2 class="package-card__destination">Paraíba</h2>
+              <p class="package-card__price">R$ 1.200</p>
+            </header>
+
+            <footer class="package-card__footer">
+              <a href="#" class="package-card__link">Ver detalhes</a>
+            </footer>
+          </article>
+          <article class="package-card package-card--manaus">
+            <header class="package-card__header">
+              <p class="package-card__type">Hotel + Aéreo</p>
+              <h2 class="package-card__destination">Manaus</h2>
+              <p class="package-card__price">R$ 1.600</p>
+            </header>
+
+            <footer class="package-card__footer">
+              <a href="#" class="package-card__link">Ver detalhes</a>
+            </footer>
+          </article>
         </div>
       </section>
       <section>
         <h1>Busque por Categoria</h1>
         <div class="linha-vermelha"></div>
       </section>
-      <footer>
+      <footer class="footer-jornada">
         <div class="footer-informacoes-esquerda">
           <a href="index.html" class="logo-footer" title="Voltar paraPágina Inicial">
             <img src="assets/img/logo-jornada-texto.png" alt="Logo Branca da Jornada Viagens"/>
